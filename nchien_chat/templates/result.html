@@ -7,11 +7,15 @@
       body {
         text-align: center;
       }
+      img {
+        width: 500px;
+        height: 500px;
+      }
     </style>
   </head>
   <body>
     <h1>Résultat de la prédiction</h1>
     <p>Prédiction: {{ predictions }}</p>
-    <img src="{{ image_data }}" alt="Image prédite" />
+    <img src="data:image/jpeg;base64,{{ image_data }}" alt="Image prédite" />
   </body>
 </html>
