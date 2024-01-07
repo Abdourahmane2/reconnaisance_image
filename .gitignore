@@ -1,5 +1,5 @@
 # Exclude node_modules directory
-node_modules/
+__pycache__/
 
 # Exclude Python bytecode files
 *.pyc
