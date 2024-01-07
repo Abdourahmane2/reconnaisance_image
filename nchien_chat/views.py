@@ -1,6 +1,5 @@
 import base64
-from django.shortcuts import render
-from django.http import HttpResponse 
+from django.shortcuts import render 
 import tensorflow as tf 
 import numpy as np
 from keras.preprocessing import image
