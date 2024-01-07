@@ -1,8 +1,8 @@
 # Exclude node_modules directory
-__pycache__/
+/__pycache__
 
 # Exclude Python bytecode files
 *.pyc
 
-/.heroku
+/app/.heroku
 /migrations
