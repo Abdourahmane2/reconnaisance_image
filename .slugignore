@@ -1,4 +1,4 @@
 # ignore les fichiers initules
 /__pycache__
 /migrations
-/classification
+/classifification
