@@ -1,0 +1,7 @@
+# ignore les fichiers initules
+/__pycache__
+/migrations
+*.pyc
+/db.sqlite3
+/app
+
