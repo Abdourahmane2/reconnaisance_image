@@ -2,6 +2,7 @@ import base64
 from django.shortcuts import render 
 import tensorflow as tf 
 import numpy as np
+from django.http import HttpResponse
 from keras.preprocessing import image
 import io
 
@@ -11,7 +12,7 @@ model = tf.keras.models.load_model(r'C:\Users\HP\Desktop\model_chein_chat')
 
 
 def home(request): 
-    imagefile = request.FILES.get('imagefile')
+    """imagefile = request.FILES.get('imagefile')
     if imagefile is not None: 
         image_data = imagefile.read()
         encoded_image = base64.b64encode(image_data).decode('utf-8')
@@ -27,4 +28,5 @@ def home(request):
         
         return render(request, 'result.html', {'predictions': predictions, 'image_data': encoded_image})
     else: 
-        return render(request, 'index.html')
+        return render(request, 'index.html')"""
+    return  HttpResponse('hello')
