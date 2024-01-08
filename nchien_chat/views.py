@@ -4,9 +4,9 @@ import tensorflow as tf
 import numpy as np
 
 from keras.preprocessing import image
-import io
+import io"""
 
-model = tf.keras.models.load_model(r'C:\Users\HP\Desktop\model_chein_chat')"""
+#model = tf.keras.models.load_model(r'C:\Users\HP\Desktop\model_chein_chat')
 
 # chien_chat/views.py
 from django.http import HttpResponse
