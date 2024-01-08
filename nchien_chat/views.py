@@ -1,15 +1,15 @@
-import base64
+"""import base64
 from django.shortcuts import render 
 import tensorflow as tf 
 import numpy as np
-from django.http import HttpResponse
+
 from keras.preprocessing import image
 import io
 
-model = tf.keras.models.load_model(r'C:\Users\HP\Desktop\model_chein_chat')
+model = tf.keras.models.load_model(r'C:\Users\HP\Desktop\model_chein_chat')"""
 
 # chien_chat/views.py
-
+from django.http import HttpResponse
 
 def home(request): 
     """imagefile = request.FILES.get('imagefile')
