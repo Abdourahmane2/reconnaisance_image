@@ -20,13 +20,12 @@ def home(request):
         test_image = image.img_to_array(test_image)
         test_image = np.expand_dims(test_image, axis=0)
         result = model.predict(test_image)
-        
         if result[0][0] == 0:
             predictions = "chat"
         else:
             predictions = "chien"
         
-        return render(request, 'result.html', {'predictions': predictions, 'image_data': encoded_image})
+        return render(request, 'result.html', {'predictions': predictions, 'image_data': encoded_image })
     else: 
         return render(request, 'index.html')
     #return  HttpResponse('hello')
